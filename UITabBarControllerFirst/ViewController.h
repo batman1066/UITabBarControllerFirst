@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  UITabBarControllerFirst
+//  UItalBarC
 //
-//  Created by yang ming on 2017/3/3.
-//  Copyright © 2017年 yang ming. All rights reserved.
+//  Created by yang ming on 2016/12/4.
+//  Copyright © 2016年 yang ming. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

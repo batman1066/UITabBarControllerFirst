@@ -1,22 +1,25 @@
 //
 //  AppDelegate.m
-//  UITabBarControllerFirst
+//  UItalBarC
 //
-//  Created by yang ming on 2017/3/3.
-//  Copyright © 2017年 yang ming. All rights reserved.
+//  Created by yang ming on 2016/12/4.
+//  Copyright © 2016年 yang ming. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
-
+@property(nonatomic,strong) UIViewController *viewController;
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { self.viewController=[[ViewController alloc] init];
+    self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController=self.viewController;
+    [self.window makeKeyAndVisible];    // Override point for customization after application launch.
+    
     return YES;
 }
 
